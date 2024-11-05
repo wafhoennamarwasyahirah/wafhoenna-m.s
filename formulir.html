@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Peserta - Perlombaan Olahraga 2024</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container my-5">
+        <section id="pendaftaran">
+            <h2>Pendaftaran Peserta</h2>
+            <p>Isi form di bawah ini untuk mendaftar:</p>
+            <form action="submit-form.php" method="post">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" class="form-control" id="nama" name="nama" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="Jenis Kelamin">JenisKelamin:</label>
+                    <input type="Jenis Kelamin" class="form-control" id="Jenis Kelamin" name="Jenis Kelamin" required>
+                </div>
+                <div class="form-group">
+                    <label for="Alamat">Alamat:</label>
+                    <input type="Alamat" class="form-control" id="Alamat" name="Alamat" required>
+                </div>
+                <div class="form-group">
+                    <label for="cabang">Cabang Olahraga:</label>
+                    <select class="form-control" id="cabang" name="cabang" required>
+                        <option value="--Pilih--">--Pilih--</option>
+                        <option value="lari">Lari</option>
+                        <option value="renang">Renang</option>
+                        <option value="basket">Basket</option>
+                        <option value="sepeda">Sepeda</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-success">Daftar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
